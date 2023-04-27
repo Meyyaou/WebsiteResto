@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hot soup </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="C:\Users\maria\OneDrive\Desktop\this4\restauraunt\home.css"
+   
+</head>
+<body>
+    <header> 
+<nav>  
+    <img      > 
+    <a href=""> Home  </a>
+    <a href=""> Menu </a>
+    <a  href=""> Contact us </a>
+    <a href=""> About us </a>
+</nav></header>
+<main> 
+    <!--top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="icons8-collapse-arrow-24.png"></button>
+    <script >
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+       // When the user scrolls down 20px from the top of the document, show the button
+       window.onscroll = function() {scrollFunction()};
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           mybutton.style.display = "block";
+         } else {
+           mybutton.style.display = "none";
+         }
+       }
+       // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+    </script>
+     <!--top button-->
+
+<!-- the main landing --> 
+
+<!-- the main landing --> 
+<!-- the mini menu-->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <section class="menu ">
+            <a class="prev" onclick="plusSlides(-1)"><img src="icons8-less-than-30.png"></a>
+            <div class="itemsline-through">
+        <img  src="pexels-photo-6692112.jpeg">
+        <div class="itemsline-throughinfo"><h2 >  dishe 1</h2>
+        <p > </p>
+        <a href=""> 300.0</a></div>
+        
+            </div> <!-- the 1st dish -->
+            <div class="itemsline-through">
+                <img  src="pexels-photo-6692112.jpeg" >
+                <div class="itemsline-throughinfo"><h2 >  dishe 2</h2>
+                    <p > </p>
+                    <a href=""> 300.0</a></div>
+                    </div><!-- the 2nd dish -->
+                    <div class="itemsline-through">
+                        <img  src="pexels-photo-6692112.jpeg">
+                        <div class="itemsline-throughinfo"><h2 >  dishe 3</h2>
+                            <p > </p>
+                            <a href=""> 300.0</a></div>
+                            </div><!--  the 3rd dish  -->
+                            <a class="next" onclick="plusSlides(1)"> <img src="icons8-more-than-30.png"></a>
+        </section>
+    </div>
+    <div class="mySlides fade">
+        <section class="menu ">
+            <a class="prev" onclick="plusSlides(-1)"><img src="icons8-less-than-30.png"></a>
+            <div class="itemsline-through">
+        <img  src="pexels-photo-6692112.jpeg">
+        <div class="itemsline-throughinfo"><h2 >  dishe 1</h2>
+        <p > this dish is a dish</p>
+        <a href=""> 300.0</a></div>
+        
+            </div> <!-- the 1st dish -->
+            <div class="itemsline-through">
+                <img  src="pexels-photo-6692112.jpeg" >
+                <div class="itemsline-throughinfo"><h2 >  dishe 2</h2>
+                    <p > </p>
+                    <a href=""> 300.0</a></div>
+                    </div><!-- the 2nd dish -->
+                    <div class="itemsline-through">
+                        <img  src="pexels-photo-6692112.jpeg">
+                        <div class="itemsline-throughinfo"><h2 >  dishe 3</h2>
+                            <p > </p>
+                            <a href=""> 300.0</a></div>
+                            </div><!--  the 3rd dish  -->
+                            <a class="next" onclick="plusSlides(1)"> <img src="icons8-more-than-30.png"></a> <!--for the nesxt slide this will be the more button links to menu page -->
+        </section>
+    </div>
+<script >
+   //slid-show
+   let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex -1].style.display = "block";  
+      dots[slideIndex -1].className += " active";
+    }
+</script>
+<!--the mini menu-->  
+<!-- the events-->
+<hr>
+<section class="event">
+    <video width="320" height="240" autoplay>
+        Your browser does not support the video tag.
+      </video> <!--video about today-->
+    <div class="eventitem">
+    <h1> today's</h1>
+    <h5> what we have ...</h5>
+    <!-- commantes from the scial media acc-->
+    <a href="" class="linki" > more </a> <!-- contact us  link -->
+</div>
+</section>
+<!-- the events-->
+
+<!-- reservation-->
+<section class="reserv">
+    <div class="imgcont"><img src="pexels-photo-5409012.jpeg" alt="this"></div>
+    <div class="theres">
+    <h4> welcome</h4> 
+     <h1>reservation</h1>
+    <h6>
+    <span style="color:#000000;">09:00 AM – 23:00 PM weekday</span><br>
+    <span style="color:#000000;">10:00 AM – 24:00 PM weekend </span> <br>
+</h6> 
+<h5> phone </h5>
+<h6>  <span>00-00-00-00</span><br>
+<span>00-00-00-00</span></h6>
+<p> </p>
+<div   class="popupcont">
+  <button type="button" class="linki" onclick="openpopup()"> reserve now </button> <!-- reservation link -->
+  <div  id="thispop" class="pop">
+    <button type="button" onclick="closepopup()"> X </button>
+    <div class="popform">
+
+      <div class="formitem">  <label name="places"> how many pepol </label>
+        <input type="number"> </div>
+
+      <div class="formitem"><label name="name"> name</label>
+      <input type="text"></div> 
+
+      <div class="formitem"><label name="tel"> tel </label>
+      <input type="tel"></div>
+      
+      <div class="formitem"> <label name="e-mail"> e-mail </label>
+      <input type="email"></div>
+<div class="formitem"><label name="date"> date </label>
+      <input type="date"></div>
+      
+    </div> 
+</div> 
+</div>
+<!-- reservation pop up-->
+<script> 
+  let  popy=document.getElementById("thispop");
+  function openpopup(){
+   popy.classList.add("oppen-popup");
+  }
+  function closepopup(){
+    popy.classList.remove("oppen-popup");
+  }
+  </script>
+  <!-- reservation pop up-->
+</div>
+</section>
+<!-- reservation-->
+
+<!-- footer-->
+
+
+<!-- footer-->
+</main>
+    
+</body>
+</html>
