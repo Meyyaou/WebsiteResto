@@ -1,0 +1,549 @@
+hr { display: block; 
+    margin-left: 5em;
+     margin-bottom: 0.5em;
+     margin-top: auto;
+     margin-right: 5em; 
+    overflow: hidden; 
+    border-style: inset; 
+    border-width: 1px ;
+}
+main{
+  background-color: white;
+}
+body{
+  height: auto;
+  width:auto;
+  position: relative;
+  margin: 0px 0px 0px 0px ;
+  padding: 0px 0px 0px 0px ;
+background-color: white;
+}
+/*top button*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  #myBtn:hover {
+    background-color: #555;
+  }
+  /*mainsection*/
+.mainsec{
+  background-image: url('thanksgiving-347306.jpg');
+  position: relative;
+  background-clip: content-box;
+  background-position: center; 
+  background-repeat: no-repeat;   
+ background-size: cover;
+ height: 700px;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ background-attachment: fixed;
+}
+.logo:hover{
+  transform: scale(1.3); 
+}
+.logo{
+display:block; 
+z-index:999; 
+cursor: pointer; 
+-webkit-transition-property: all; 
+-webkit-transition-duration: 0.3s; 
+-webkit-transition-timing-function: ease; 
+}
+.logo >img{
+  position: relative;
+}
+
+  /*mainsection*/
+  /*endsec*/
+  .endsec{
+    background-image: url('pexels-andrey-grushnikov-707670.jpg');
+    position: relative;
+    background-clip: content-box;
+    background-position: center; 
+    background-repeat: no-repeat;   
+   background-size: cover;
+   height: 700px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   background-attachment: fixed;
+   transition: transform 3s ease;
+  transform: scale(1);
+  }
+ 
+  /*mainsec*/
+/*reserv*/
+.reserv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+align-items: center;
+font-family:  Quicksand, Arial, Helvetica, sans-serif;
+margin: 0px 0px 0px 0px;
+text-align: center;
+text-transform: capitalize;
+background-image: url("cooking-1835369.jpg");
+background-attachment: fixed;
+background-repeat:no-repeat;
+background-position-y: bottom;
+background-position-x:right;
+background-size: contain;
+height:400px;
+}
+/*reserv img*/
+.empty{
+    width: 50%;
+  height: 100%;
+}
+
+/*reserv info */
+.theres{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+}
+.theres > h4{
+    font-family:  Quicksand, Arial, Helvetica, sans-serif;
+    font-size: 24px;   
+     line-height: 32px;   
+     text-transform: none;   
+     font-weight: 300;    
+    color: rgb(173, 34, 34);
+    margin: 1px 1px 1px 1px; 
+    border-bottom: 1px black;
+} 
+.theres> h1{
+font-family:  Raleway, Arial, Helvetica, sans-serif; 
+font-size: 48px;   
+ line-height: 56px;   
+ text-transform: capitalize;   
+ font-weight: 600;  
+ margin: 1px 1px 1px 1px;
+ letter-spacing:  2px;
+}
+.theres >h6{
+font-family:   Arial, Helvetica, sans-serif;  
+  font-size: 13px;  
+    line-height: 20px;  
+    text-transform: none;   
+     font-weight: 300;   
+     margin: 2px 2px 2px 2px; 
+} 
+.theres >h5{
+    font-family:  Raleway, Arial, Helvetica, sans-serif; 
+    font-size: 30px;   
+     line-height: 56px;   
+     text-transform: capitalize;   
+     font-weight: 600;  
+     margin: 2px 2px 2px 2px;
+}  
+/*link reserve*/
+.linki{
+       box-sizing: border-box; 
+        align-items: center;  
+        align-self: center;
+         min-width: 50%;   
+         width: max-content;
+         touch-action: manipulation;
+         border :var(--corvid-border-radius,var(--rd,0)); 
+         border-radius: 2px;   
+         box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6)); 
+         background-color: rgb(173, 34, 34);  
+          transition: var(--trans1,border-color .4s ease 0s,background-color .4s ease 0s);
+          justify-content: center;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          text-decoration: none;
+          text-align: center;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif !important;
+}
+.linki:hover{
+        color: rgb(173, 34, 34);
+        background-color: black;
+    }
+    .linki>a{
+      padding-top: 5px;
+          padding-bottom: 5px;
+          text-decoration: none;
+          text-align: center;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif !important;
+    }
+    /*reserv the pop*/
+    .pop{
+width: 70%;
+background:transparent;
+border-radius: 6px;
+position: absolute;
+top:0;
+left: 50%;
+transform:translate(-50%,-50%) scale(0.1);
+text-align: center;
+visibility: hidden;
+transition: transform 0.4s ,top 0.4s;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+    }
+    .oppen-popup{
+      visibility: visible;
+      top:71%;
+      transform:translate(-50%,-50%) scale(1);
+    }
+    .pop>button{
+      width: 100%;
+      background: transparent;
+      outline: none;
+      border: 0;
+      cursor: pointer;
+    }
+     /*reserv the pop inside*/
+
+      /*reserv the right the formular*/
+    .popform{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items:center;
+      width:60%;  
+
+    }
+    .formitem{
+      width: 45%; 
+      margin-bottom: 5px ;
+    }
+    .formitem >input{
+      width: 100%;
+      border:1px solid rgba(0, 0, 0, 0.1);   
+      border-radius: 4px;   
+       height: 38px;   
+        line-height: 38px;  
+          padding-left: 5px;
+         
+    }
+    .formitem >input::placeholder{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
+      color: black;
+    }
+     /*reserv the pop left the pic */
+    .popleft{
+width:40%;
+    }
+    .popleft > img{
+      width:100%;
+      border-top-left-radius: 6px;
+      border-end-start-radius: 6px;
+    }
+/*event for event */
+
+
+.event{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient(to bottom, #ffffff 0%, #fbeaea 84%);
+   position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+
+}
+.event .air{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px
+}
+.event .air.air1{
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+.event .air.air2{
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+.event .air.air3{
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+.event .air.air4{
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 1000px; 
+  }
+}
+@keyframes wave2{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: -1000px; 
+  }
+}
+
+.event >img{
+    width: 50%;
+}
+.eventitem{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+    height: 25%;
+ 
+}
+.eventitem >a {
+    align-self: center;
+}
+.eventitem >a:hover{
+    background-color: white;
+}
+.eventitem> h1{
+    font-family:Raleway, Arial, Helvetica, sans-serif; 
+    text-transform: capitalize;   
+     font-weight: 500;  
+}
+.eventitem>h5{
+    font-family:Quicksand, Arial, Helvetica, sans-serif;
+    text-transform: capitalize;   
+     font-weight: 300;  
+     margin-top: 0px;
+     margin-left: 5px;
+     color: #b30000;
+}
+/*menulist*/
+.menu{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+margin-bottom: 10px ;
+padding: 20px 20px 20px 20px;
+background-color: white;
+background-attachment: fixed;
+}
+.itemsline-through{
+    overflow:  hidden;   
+    position: relative; 
+    box-sizing:  border-box;
+    border-radius: 10px; 
+    flex:  0 0 25%;    max-width: 25%;
+}
+.itemsline-through >img{
+ vertical-align:  middle;   
+  border-style: none;
+} 
+
+/* the dish name */
+.itemsline-through > h2{
+    font-family:Quicksand, Arial, Helvetica, sans-serif;
+}
+/* the price is alink to order  */
+.itemsline-through > span{
+    background-color: #fff;
+    box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    left: 20px;
+    letter-spacing: 1px;
+    padding: 3px 12px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+}
+.itemsline-through > a{
+     color: #007bff;
+     text-decoration: none;
+     background-color: transparent;
+     cursor: pointer;
+}
+.thedish{
+bottom:  0px; 
+left: 0;  
+position: absolute; 
+ right: 0;   
+text-align: center; 
+}
+.theinsidedish{
+  background-color: whitesmoke;
+  box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+ display: flex;
+ align-self: center;
+ justify-self: center;
+ align-content: center;
+ justify-content: space-evenly;
+  padding: 0px 0px 0px; 
+  opacity: 0;
+  width: 70%; 
+  transition:  all 0.6s ease 0s;
+  margin:auto;
+  margin-bottom: 10px;
+}
+.thedish:hover .theinsidedish{
+  opacity: 1;
+  }
+  .theinsidedish >a{
+    color:black;
+    line-height: 2;
+    padding: 16px 2px 12px ;
+    position: relative;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+  }
+  .theinsidedish >img{
+    width: 25%;
+  }
+
+.ordering{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+align-items: center;
+font-family:  Quicksand, Arial, Helvetica, sans-serif;
+margin: 0px 0px 0px 0px;
+text-align: center;
+text-transform: capitalize;
+background-image: url("pexels-cats-coming-955137.jpg");
+background-attachment: fixed;
+background-repeat:no-repeat;
+background-position-y: center;
+background-position-x:center;
+background-size: 500%;
+height:400px;
+display: none;
+justify-content: end;
+align-items: center;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+/*slide show */
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  transition: 0.6s ease;
+  user-select: none;
+ width: 4%;
+}
+
+/* Position the "next button" to the right */
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.349);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name:fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+@media  screen and (max-width:500px)  {
+  
+ 
+  .menu{
+display: none;
+  } 
+  .ordering{
+    display: flex;
+    height: 400px;
+
+  }
+  .theres>h1{
+    font-size:23px;
+  }
+  .theres{
+    justify-content: end;
+  }
+ .pop{
+  width: 97%;
+ }
+.dot{
+  display: none;
+}
+}
