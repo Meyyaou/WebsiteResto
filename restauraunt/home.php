@@ -9,7 +9,7 @@
    
 </head>
 <body>
-
+<?php include_once ('header.php');?>
 <main> 
     <!--top button-->
     <button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="icons8-collapse-arrow-24.png"></button>
@@ -201,7 +201,7 @@
 
 </section>
 <!-- footer-->
-
+<?php include_once('footer.php');?>
 
 <!-- footer-->
 </main>
