@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="menu.css">
 </head>
 <body>
+<?php include_once ('header.php'); ?>
   <figure class="fieldSection fieldSection-undefined entity--1 alignment--left  paperform__page paperform__page--0" data-block="true" data-editor="paperform-editor" data-offset-key="acaah-0-0" data-testid="liveatomic">
   <form data-testid="livefieldsection" class="LiveFieldSection Paperform__QuestionBlock Paperform__QuestionBlock--acaah  " style="width:90%; max-width: 100%; margin: 0px auto; padding-bottom: 15px; padding-top: 15px;"> 
  <div class="searchfood">
@@ -98,8 +99,9 @@
     </svg>
   </i>
 </button>
-
     <script  src="menu.js"> </script> 
-  
+    <?php include_once('footer.php'); ?>
+
 </body>
 </html>
+       
