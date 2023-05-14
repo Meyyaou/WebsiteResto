@@ -1,5 +1,4 @@
 <!-- header.php -->
-<?php 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,6 +21,7 @@
 <li><a  href="#">Reservation</a></li>
 <li><a  href="#">About Us</a></li>
 <li><a  href="#">Contact</a></li>
+<li><a  href="#">Login</a></li>
 </ul>
 <div class="menu-bars">
   <input type="checkbox">
@@ -38,4 +38,3 @@
   <!--
 <script type="text/javascript" src="js/script.js"></script>
   -->
-?>
