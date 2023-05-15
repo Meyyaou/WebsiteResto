@@ -1,5 +1,6 @@
 .icons {
-    position: absolute;
+    position: fixed;
+    z-pointer: 3;
     left: 80%;
     top: 50%;
     padding: 0 9%;
