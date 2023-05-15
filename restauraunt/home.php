@@ -10,7 +10,8 @@
 </head>
 <body>
 <?php include_once ('header.php');?>
-<main> 
+<?php include_once ('floatingContact.php'); ?>
+<main>
     <!--top button-->
     <button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="icons8-collapse-arrow-24.png"></button>
      <!--top button-->
@@ -160,18 +161,19 @@
       <!--popleft-->
 
       <!--popright-->
+      <form action="reservation.php" method="POST">
       <div class="popform">
       <div class="formitem"> 
-        <input type="number" placeholder="how many peopl"> </div>
+        <input type="number" placeholder="how many people" name="number"> </div>
 
       <div class="formitem">
-      <input type="text" placeholder="your name"></div> 
+      <input type="text" placeholder="your name" name="name"></div> 
 
       <div class="formitem">
-      <input type="tel" placeholder="telephone number"></div>
+      <input type="tel" placeholder="telephone number" name="phone"></div>
       
       <div class="formitem"> 
-      <input type="email" placeholder="email"></div>
+      <input type="email" placeholder="email" name="email"></div>
 
       <div class="formitem" style="width:94%;">
       <input type="date" placeholder="the date of reservation"></div>
@@ -180,7 +182,7 @@
     </div> 
     <!--popright-->
     <button type="button" onclick="closepopup()" style="align-self: self-end;"> <img src="icons8-double-down-48.png"></button>
-</div> 
+</div> </form>
 </div>
 <!-- reservation pop up script-->
 <script> 
@@ -205,7 +207,7 @@
 
 <!-- footer-->
 </main>
-    <script src="C:\Users\maria\OneDrive\Desktop\this4\restauraunt\home.js"> 
+    <script src="home.js"> 
   </script>
 </body>
 </html>
